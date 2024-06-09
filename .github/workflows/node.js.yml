@@ -20,7 +20,7 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    name: Package into node binary
-    uses: lando/pkg-action@v4
-    with:
-      entrypoint: bin/cli
+      name: Package into node binary
+      uses: lando/pkg-action@v4
+      with:
+        entrypoint: bin/cli
