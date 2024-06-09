@@ -8,6 +8,10 @@ var app = require('../app');
 var debug = require('debug')('servermanagerclient:server');
 var http = require('http');
 
+const SocketServer = require('../utils/socket_server');
+const io = require('socket.io')(http);
+global.SERVER_SOCKET = new SocketServer(io)
+
 /**
  * Get port from environment and store in Express.
  */
