@@ -1,0 +1,28 @@
+{
+  "name": "servermanagerclient",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./bin/www",
+  "bin": "./bin/www",
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "pkg": {
+    "scripts": "build/**/*.js",
+    "assets": "views/**/*",
+    "targets": [
+      "node18-win-x64"
+    ],
+    "outputPath": "dist"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "chart.js": "^4.4.3",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
+  }
+}
